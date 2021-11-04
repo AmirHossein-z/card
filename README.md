@@ -1,2 +1,2 @@
 # card
-create a sample card with html and sass 
+create sample cards with html and sass 
