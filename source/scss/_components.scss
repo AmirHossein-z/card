@@ -1,0 +1,16 @@
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 250px;
+
+    .card {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: $border-radius-5;
+        overflow: hidden;
+    }
+}

@@ -4,25 +4,23 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-top: 250px; }
+  .card-wrapper .card {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden; }
+
+.h1-top {
   margin-top: 100px;
-}
+  text-align: center; }
 
-.card-wrapper .card {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card-wrapper .card-overlay {
+/* first card */
+.card-overlay-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  transition: all linear 0.3s;
   flex-direction: column;
   position: absolute;
   top: -100%;
@@ -31,17 +29,15 @@
   height: 100%;
   border-radius: 10px;
   z-index: 10;
-}
-
-.card-wrapper .card:hover .card-overlay {
-  top: 0%;
-}
-
-.card-wrapper .card-btn {
   -webkit-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
-  transition: all linear 0.3s;
+  transition: all linear 0.3s; }
+
+.card:hover .card-overlay-1 {
+  top: 0%; }
+
+.card-overlay-btn-1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -51,43 +47,94 @@
   width: 100%;
   height: 100%;
   z-index: 10;
-}
-
-.card-wrapper .card-btn button {
   -webkit-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
-  transition: all linear 0.3s;
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-  width: 100%;
-}
+  transition: all linear 0.3s; }
+  .card-overlay-btn-1 button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff8965;
+    opacity: 0.9;
+    color: #000;
+    width: 100%;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
+    .card-overlay-btn-1 button:hover {
+      background-color: #ff8965;
+      opacity: 1; }
 
-.card-wrapper .card-btn button:hover {
-  background-color: #00000093;
-}
+.card:hover .card-overlay-btn-1 {
+  left: 0; }
 
-.card-wrapper .card:hover .card-btn {
-  left: 0;
-}
-
-.card-wrapper .card-img {
-  -webkit-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  transition: all linear 0.3s;
+.card-img-1 {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   opacity: 0.8;
   z-index: 1;
-}
+  -webkit-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
 
-.card-wrapper .card:hover .card-img {
-  opacity: 1;
-}
+.card:hover .card-img-1 {
+  opacity: 1; }
+
+/* first card */
+/* second card */
+.card .card-overlay-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #90caf95a;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
+  .card .card-overlay-2-btn {
+    z-index: 10;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: blue;
+    background-color: #ff8965;
+    border: none;
+    outline: none;
+    text-align: center; }
+    .card .card-overlay-2-btn button {
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: transparent; }
+
+.card:hover .card-overlay-2 {
+  opacity: 1; }
+
+.card-img-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  -webkit-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
+
+.card:hover .card-img-2 {
+  opacity: 0.9; }
+
+/* second card */

@@ -1,0 +1,12 @@
+@mixin flexLayout($align:center) {
+    display: flex;
+    justify-content: center;
+    align-items: $align;
+}
+
+@mixin transition() {
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
