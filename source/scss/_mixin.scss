@@ -4,9 +4,17 @@
     align-items: $align;
 }
 
-@mixin transition() {
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    -moz-transition: all linear 0.3s;
-    transition: all linear 0.3s;
+@mixin transition($param...) {
+    -webkit-transition: $param;
+    -o-transition: $param;
+    -moz-transition: $param;
+    transition: $param;
+}
+
+@mixin transform($param...) {
+    -webkit-transform: $param;
+    -o-transform: $param;
+    -moz-transform: $param;
+    -ms-transform: $param;
+    transform: $param;
 }

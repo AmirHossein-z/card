@@ -18,7 +18,7 @@
     height: 100%;
     border-radius: $border-radius-10;
     z-index: 10;
-    @include transition();
+    @include transition(all linear 0.3s);
 }
 
 .card:hover .card-overlay-1 {
@@ -33,7 +33,7 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    @include transition();
+    @include transition(all linear 0.3s);
 
     button {
         padding: 6px 12px;
@@ -45,7 +45,7 @@
         opacity: 0.9;
         color: #000;
         width: 100%;
-        @include transition();
+        @include transition(all linear 0.3s);
 
         &:hover {
             background-color: $first-color;
@@ -64,7 +64,7 @@
     border-radius: $border-radius-10;
     opacity: 0.8;
     z-index: 1;
-    @include transition();
+    @include transition(all linear 0.3s);
 }
 
 .card:hover .card-img-1 {
@@ -87,7 +87,7 @@
         background-color: $second-color;
         opacity: 0;
         z-index: 10;
-        @include transition();
+        @include transition(all linear 0.3s);
 
         &-btn {
             z-index: 10;
@@ -117,7 +117,7 @@
         height: 100%;
         border-radius: $border-radius-10;
         z-index: 1;
-        @include transition();
+        @include transition(all linear 0.3s);
     }
 
     &:hover .card-img-2 {
@@ -126,3 +126,60 @@
 }
 
 /* second card */
+
+/* third card */
+
+.card {
+    &-overlay-3 {
+        @include flexLayout();
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        opacity: 0;
+        color: #fff;
+        z-index: 10;
+        @include transition(all ease-out 1s);
+    }
+
+    &:hover .card-overlay-3 {
+        opacity: 0.7;
+        background-color: $third-color;
+
+        &-btn {
+            z-index: 10;
+            border-radius: $border-radius-5;
+            padding: 5px 10px;
+            color: blue;
+            background-color: $first-color;
+            border: none;
+            outline: none;
+            text-align: center;
+
+            button {
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    &-img-3 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: 10;
+        @include transition(all linear 0.9s);
+    }
+
+    &:hover .card-img-3 {
+        @include transform(rotate(720deg));
+        opacity: 0;
+    }
+
+
+}
