@@ -150,17 +150,17 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  opacity: 0;
-  color: #fff;
+  color: #000;
   z-index: 10;
-  -webkit-transition: all ease-out 1s;
-  -o-transition: all ease-out 1s;
-  -moz-transition: all ease-out 1s;
-  transition: all ease-out 1s; }
+  opacity: 0;
+  -webkit-transition: all 1.2s linear 0.3s;
+  -o-transition: all 1.2s linear 0.3s;
+  -moz-transition: all 1.2s linear 0.3s;
+  transition: all 1.2s linear 0.3s; }
 
 .card:hover .card-overlay-3 {
-  opacity: 0.7;
-  background-color: #4b636e; }
+  background-color: rgba(75, 99, 110, 0.3);
+  opacity: 1; }
   .card:hover .card-overlay-3-btn {
     z-index: 10;
     border-radius: 5px;
@@ -181,10 +181,10 @@
   height: 100%;
   border-radius: 50%;
   z-index: 10;
-  -webkit-transition: all linear 0.9s;
-  -o-transition: all linear 0.9s;
-  -moz-transition: all linear 0.9s;
-  transition: all linear 0.9s; }
+  -webkit-transition: all linear 1.2s;
+  -o-transition: all linear 1.2s;
+  -moz-transition: all linear 1.2s;
+  transition: all linear 1.2s; }
 
 .card:hover .card-img-3 {
   -webkit-transform: rotate(720deg);
