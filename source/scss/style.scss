@@ -80,11 +80,11 @@
         flex-direction: column;
         position: absolute;
         top: 0%;
-        left: 0;
+        left: 0%;
         width: 100%;
         height: 100%;
         border-radius: $border-radius-10;
-        background-color: $second-color;
+        background-color: rgba($second-color, 0.5);
         opacity: 0;
         z-index: 10;
         @include transition(all linear 0.3s);
@@ -128,6 +128,61 @@
 /* second card */
 
 /* third card */
+.card {
+
+    &-overlay-3 {
+        @include flexLayout();
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: -100%;
+        border-radius: $border-radius-10;
+        background-color: $second-color;
+        z-index: 10;
+        @include transition(all ease 0.5s);
+
+
+        &-btn {
+            border-radius: $border-radius-5;
+            padding: 5px 10px;
+            color: blue;
+            background-color: $first-color;
+            border: none;
+            outline: none;
+            text-align: center;
+
+            button {
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+
+    }
+
+    &:hover .card-overlay-3 {
+        left: 0%;
+    }
+
+
+    &-img-3 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: $border-radius-10;
+        @include transition(all ease 0.5s);
+    }
+
+    &:hover .card-img-3 {
+        left: 100%;
+    }
+
+}
 
 /* third card */
 
@@ -146,7 +201,6 @@
         z-index: 10;
         opacity: 0;
         @include transition(all 1.2s linear 0.3s);
-        // @include transition(background-color 1.1s linear 0.5s);
     }
 
     &:hover .card-overlay-4 {
