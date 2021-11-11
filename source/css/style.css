@@ -139,54 +139,53 @@
 
 /* second card */
 /* third card */
-.card-overlay-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  left: -100%;
-  border-radius: 10px;
-  background-color: #90caf9;
-  z-index: 10;
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
-  .card-overlay-3-btn {
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: blue;
-    background-color: #ff8965;
-    border: none;
-    outline: none;
-    text-align: center; }
-    .card-overlay-3-btn button {
-      font-size: 18px;
+.card {
+  border-radius: 10px; }
+  .card-overlay-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    border-radius: 10px;
+    background-color: #90caf9;
+    z-index: 10;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
+    .card-overlay-3-btn {
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: blue;
+      background-color: #ff8965;
       border: none;
       outline: none;
-      background-color: transparent; }
-
-.card:hover .card-overlay-3 {
-  left: 0%; }
-
-.card-img-3 {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
-
-.card:hover .card-img-3 {
-  left: 100%; }
+      text-align: center; }
+      .card-overlay-3-btn button {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: transparent; }
+  .card:hover .card-overlay-3 {
+    left: 0%; }
+  .card-img-3 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
+  .card:hover .card-img-3 {
+    left: 100%; }
 
 /* third card */
 /* forth card */

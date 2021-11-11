@@ -129,6 +129,7 @@
 
 /* third card */
 .card {
+    border-radius: $border-radius-10;
 
     &-overlay-3 {
         @include flexLayout();
@@ -188,6 +189,7 @@
 
 /* forth card */
 .card {
+
     &-overlay-4 {
         @include flexLayout();
         flex-direction: column;
