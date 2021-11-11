@@ -129,8 +129,11 @@
 
 /* third card */
 
+/* third card */
+
+/* forth card */
 .card {
-    &-overlay-3 {
+    &-overlay-4 {
         @include flexLayout();
         flex-direction: column;
         width: 100%;
@@ -146,7 +149,7 @@
         // @include transition(background-color 1.1s linear 0.5s);
     }
 
-    &:hover .card-overlay-3 {
+    &:hover .card-overlay-4 {
         background-color: rgba($third-color, 0.3);
         opacity: 1;
 
@@ -169,7 +172,7 @@
         }
     }
 
-    &-img-3 {
+    &-img-4 {
         width: 100%;
         height: 100%;
         border-radius: 50%;
@@ -177,10 +180,12 @@
         @include transition(all linear 1.2s);
     }
 
-    &:hover .card-img-3 {
+    &:hover .card-img-4 {
         @include transform(rotate(720deg));
         opacity: 0;
     }
 
 
 }
+
+/* forth card */

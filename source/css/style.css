@@ -139,7 +139,9 @@
 
 /* second card */
 /* third card */
-.card-overlay-3 {
+/* third card */
+/* forth card */
+.card-overlay-4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,10 +160,10 @@
   -moz-transition: all 1.2s linear 0.3s;
   transition: all 1.2s linear 0.3s; }
 
-.card:hover .card-overlay-3 {
+.card:hover .card-overlay-4 {
   background-color: rgba(75, 99, 110, 0.3);
   opacity: 1; }
-  .card:hover .card-overlay-3-btn {
+  .card:hover .card-overlay-4-btn {
     z-index: 10;
     border-radius: 5px;
     padding: 5px 10px;
@@ -170,13 +172,13 @@
     border: none;
     outline: none;
     text-align: center; }
-    .card:hover .card-overlay-3-btn button {
+    .card:hover .card-overlay-4-btn button {
       font-size: 18px;
       border: none;
       outline: none;
       background-color: transparent; }
 
-.card-img-3 {
+.card-img-4 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -186,10 +188,12 @@
   -moz-transition: all linear 1.2s;
   transition: all linear 1.2s; }
 
-.card:hover .card-img-3 {
+.card:hover .card-img-4 {
   -webkit-transform: rotate(720deg);
   -o-transform: rotate(720deg);
   -moz-transform: rotate(720deg);
   -ms-transform: rotate(720deg);
   transform: rotate(720deg);
   opacity: 0; }
+
+/* forth card */
