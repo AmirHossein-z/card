@@ -416,3 +416,59 @@
 }
 
 /* seventh card */
+
+/* eighth card */
+
+.card {
+    &-overlay-8 {
+        @include flexLayout();
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: $second-color;
+        @include transition(all ease 0.5s 1s);
+        @include transform-origin(left top);
+        @include transform(perspective(300px) rotateY(90deg));
+
+        &-btn {
+            z-index: 10;
+            padding: 5px 10px;
+            color: blue;
+            background-color: $first-color;
+            border: none;
+            outline: none;
+            text-align: center;
+            border-radius: $border-radius-5;
+
+            button {
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+
+    }
+
+    &:hover .card-overlay-8 {
+        @include transform(perspective(100px) rotateY(0deg));
+    }
+
+    &-img-8 {
+        width: 100%;
+        height: 100%;
+        @include transform-origin(right top);
+        @include transform(perspective(300px) rotateY(0deg));
+        @include transition(all linear 1s);
+    }
+
+    &:hover .card-img-8 {
+        @include transform(perspective(300px) rotateY(-90deg));
+    }
+}
+
+/* eighth card */
