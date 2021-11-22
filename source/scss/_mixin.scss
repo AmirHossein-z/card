@@ -18,3 +18,11 @@
     -ms-transform: $param;
     transform: $param;
 }
+
+@mixin transform-origin($params...) {
+    -o-transform-origin: $params;
+    -moz-transform-origin: $params;
+    -webkit-transform-origin: $params;
+    -ms-transform-origin: $params;
+    transform-origin: $params;
+}
