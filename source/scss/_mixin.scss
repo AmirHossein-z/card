@@ -26,3 +26,8 @@
     -ms-transform-origin: $params;
     transform-origin: $params;
 }
+
+@mixin filter($params...) {
+    -webkit-filter: $params;
+    filter: $params;
+}
