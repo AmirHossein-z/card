@@ -10,6 +10,7 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
+    gap: 2px;
     position: fixed;
     width: 90px;
     background-color: $first-color;
@@ -27,11 +28,37 @@ body {
         border-radius: $border-radius-5;
         cursor: pointer;
         text-align: left;
-        @include transition(all ease-in 0.3s);
+        position: relative;
+        @include transition(all linear 0.3s);
 
         &:hover {
-            margin-left: 12px;
-            color: #ffff00;
+            color: $forth-color;
+        }
+
+        &:focus {
+            color: $forth-color;
+        }
+
+        &:active {
+            color: $forth-color;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            width: 100%;
+            height: 2px;
+            background-color: $forth-color;
+            @include transition(all linear 0.3s);
+            @include transform(scaleX(0));
+            @include transform-origin(right);
+        }
+
+        &:hover::before {
+            @include transform(scaleX(1));
+            @include transform-origin(left);
         }
     }
 }
