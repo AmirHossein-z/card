@@ -44,21 +44,24 @@ body {
   margin: 0;
   padding: 0; }
 
+/* vertical menu */
 .menu {
   display: flex;
   flex-direction: column;
   gap: 2px;
   position: fixed;
   width: 90px;
+  height: 500px;
   background-color: #263238;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  overflow-y: auto;
   -webkit-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   transition: all linear 0.3s; }
   .menu a {
-    display: block;
+    display: inline-block;
     padding: 15px;
     text-decoration: none;
     font-size: 20px;
@@ -68,50 +71,42 @@ body {
     cursor: pointer;
     text-align: left;
     position: relative;
+    vertical-align: bottom;
     -webkit-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
     -moz-transition: all linear 0.3s;
     transition: all linear 0.3s; }
     .menu a:hover {
       color: #ffff00; }
-    .menu a:focus {
-      color: #ffff00; }
     .menu a:active {
       color: #ffff00; }
+    .menu a:focus {
+      color: #ffff00; }
     .menu a::before {
-      content: "";
+      content: '';
+      display: block;
       position: absolute;
-      top: 100%;
-      left: 0%;
-      width: 100%;
+      top: 90%;
+      right: 0%;
+      width: 0%;
       height: 2px;
       background-color: #ffff00;
-      -webkit-transition: all linear 0.3s;
-      -o-transition: all linear 0.3s;
-      -moz-transition: all linear 0.3s;
-      transition: all linear 0.3s;
-      -webkit-transform: scaleX(0);
-      -o-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      transform: scaleX(0);
-      -o-transform-origin: right;
-      -moz-transform-origin: right;
-      -webkit-transform-origin: right;
-      -ms-transform-origin: right;
-      transform-origin: right; }
+      -webkit-transition: all linear 0.4s;
+      -o-transition: all linear 0.4s;
+      -moz-transition: all linear 0.4s;
+      transition: all linear 0.4s; }
     .menu a:hover::before {
-      -webkit-transform: scaleX(1);
-      -o-transform: scaleX(1);
-      -moz-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1);
-      -o-transform-origin: left;
-      -moz-transform-origin: left;
-      -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-      transform-origin: left; }
+      width: 100%;
+      left: 0%;
+      right: auto; }
+    .menu a:focus::before {
+      width: 100%;
+      background-color: #ffff00; }
+    .menu a:active::before {
+      width: 100%;
+      background-color: #ffff00; }
 
+/* vertical menu */
 .h1-top {
   margin-top: 100px;
   text-align: center; }
