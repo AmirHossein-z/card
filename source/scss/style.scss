@@ -39,10 +39,6 @@ body {
             color: $forth-color;
         }
 
-        &:active {
-            color: $forth-color;
-        }
-
         &:focus {
             color: $forth-color;
         }
@@ -67,14 +63,9 @@ body {
 
         &:focus::before {
             width: 100%;
-            background-color: $forth-color;
-        }
-
-        &:active::before {
-            width: 100%;
-            background-color: $forth-color;
         }
     }
+
 }
 
 /* vertical menu */

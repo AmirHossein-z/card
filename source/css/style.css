@@ -78,8 +78,6 @@ body {
     transition: all linear 0.3s; }
     .menu a:hover {
       color: #ffff00; }
-    .menu a:active {
-      color: #ffff00; }
     .menu a:focus {
       color: #ffff00; }
     .menu a::before {
@@ -100,11 +98,7 @@ body {
       left: 0%;
       right: auto; }
     .menu a:focus::before {
-      width: 100%;
-      background-color: #ffff00; }
-    .menu a:active::before {
-      width: 100%;
-      background-color: #ffff00; }
+      width: 100%; }
 
 /* vertical menu */
 .h1-top {
