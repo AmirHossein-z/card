@@ -147,11 +147,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  z-index: 1;
-  -webkit-transition: all linear 0.4s;
-  -o-transition: all linear 0.4s;
-  -moz-transition: all linear 0.4s;
-  transition: all linear 0.4s; }
+  z-index: 1; }
 
 /* first card */
 /* second card */
