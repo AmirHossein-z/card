@@ -10,7 +10,13 @@
     height: 300px;
     position: relative;
     border-radius: 5px;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
+    .card-wrapper .card:hover ~ .card:nth-child(n) {
+      filter: brightness(70%); }
 
 button {
   background-color: transparent;

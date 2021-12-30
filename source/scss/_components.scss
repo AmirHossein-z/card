@@ -12,6 +12,11 @@
         position: relative;
         border-radius: $border-radius-5;
         overflow: hidden;
+        @include transition(all linear 0.3s);
+
+        &:hover~.card:nth-child(n) {
+            filter: brightness(70%);
+        }
     }
 }
 
