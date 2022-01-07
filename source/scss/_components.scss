@@ -1,4 +1,5 @@
 .card-wrapper {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
@@ -6,12 +7,17 @@
     gap: 50px;
     margin-top: 250px;
 
+    &:hover .card:not(:hover) {
+        filter: brightness(70%);
+    }
+
     .card {
         width: 300px;
         height: 300px;
         position: relative;
         border-radius: $border-radius-5;
         overflow: hidden;
+        @include transition(all linear 0.3s);
     }
 }
 

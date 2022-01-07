@@ -1,16 +1,23 @@
 .card-wrapper {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
   gap: 50px;
   margin-top: 250px; }
+  .card-wrapper:hover .card:not(:hover) {
+    filter: brightness(70%); }
   .card-wrapper .card {
     width: 300px;
     height: 300px;
     position: relative;
     border-radius: 5px;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
 
 button {
   background-color: transparent;
